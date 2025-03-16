@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pankaj Portfolio</title>
+        <style>
+            h1 {
+                font-size: 40px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: rgb(100, 40, 30);
+                text-align: center;
+            }
+            h2 {
+                font-size: 40px;
+                font-family: Roboto;
+                font-weight: normal;
+                color: rgb(100, 40, 30);
+                text-align: center;
+            }
+            #photo {
+                width: 50%;
+                height: 360px;
+                object-fit: cover;
+                display: block;
+                float: left; /* Moves the image to the left */
+                margin-right: 20px; /* Creates space between the image and text */
+            }
+            .about-container {
+                overflow: hidden; /* Prevents layout breaking with floated elements */
+                margin-bottom: 50px; /* Adds space before the next section */
+            }
+
+            .about-text {
+                width: 45%;
+                font-family: Roboto, sans-serif;
+                color: rgb(80, 40, 30);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-left: auto; /* Pushes it next to the image */
+            }
+
+            .center-content {
+                clear: both; /* Ensures it appears below the floated elements */
+                text-align: center; /* Centers the elements */
+                margin-top: 50px; /* Adds space from the content above */
+            }
+
+            #container {
+                max-width: 720px;
+                margin: 0 auto 0 auto;
+            }
+            button {
+                display: block;
+                margin: 20px auto; /* Centers the button */
+                padding: 10px 20px;
+                font-size: 16px;
+                background-color: rgb(100, 40, 30);
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 5px;
+            }
+            button:hover {
+                background-color: rgb(80, 30, 20);
+            }
+            
+            p {
+                font-family: Roboto;
+                font-weight: normal;
+                color: rgb(80, 40, 30);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <h1>Pankaj Thakur</h1>
+
+            <div class="about-container">
+                <img id="photo" src="static/Passport_size_photo.png" alt="Pankaj Thakur">
+                <p class="about-text">
+                <h2>About Me</h2>
+                    My Name is Pankaj. I am Data Enthusiast. <br>
+                    I know Python, Flask,Excel, Big Data, HDFS, Azure!
+                </p>
+            </div>
+            <div class="center-content">
+                    <h2>Certifications</h2>
+                    <h2>Academic Details</h2>
+                    <button>Contact Me</button>
+            </div>
+        </div>
+    </body>
+</html>
